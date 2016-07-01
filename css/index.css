@@ -1,0 +1,753 @@
+@charset "utf-8";
+
+
+/*Responsively set font-size*/
+
+@media only screen and (max-width: 736px) {
+  body, span, a, strong, h2, ul, li, p, i, select, option ,div,label,input{
+	font-size: 1.5em;
+	
+}
+    h1{
+        font-size:2em;
+    }
+    .intro{
+        font-size:2.8em;
+    }
+}
+
+body{
+    position:relative;
+}
+
+
+
+
+body, span, a, strong, h2, ul, li, p, i, select, option {
+    margin: 0px;
+	padding:0;
+    top: 0px; 
+}
+body, span, a, strong, h2, ul, li, p, i, select, option ,div,label,input{
+	font-size: 1.465vw;
+	font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
+    font-weight: 100;
+}
+
+h1 {
+    font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+section{
+	width:100%;
+}
+
+.center {
+    text-align: center;
+    margin:auto;
+}
+
+
+
+
+/* 头 */
+.header{
+	height: 4.68vw;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 20;
+    background: none;
+    border-style:none
+	/*padding: 10px 24vw 10px ;*/
+}
+.backDrop{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+.header .headerbtns{
+	min-width: 220px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+    font-size:16px;
+	right:5.2vw;
+}
+
+@media only screen and (max-width: 736px) {
+    
+    .navbar-nav{
+        background-color:grey;
+        margin-top: 0;
+    }
+    
+    .headerbtn {
+	min-width: 220px;
+	position: absolute;
+	text-align: center;
+    font-size:16px;
+    margin:auto;
+    }
+}
+
+
+
+a:link {
+	text-decoration: none;
+}
+.header .headerbtn{
+	font-size: 1.248vw;
+	color: white;
+	margin-left: 2vw;
+}
+.header .headerbtn:hover{
+	border-bottom: 2px solid;
+}
+/*.header .headerbtn:last-child{*/
+	/*float: right;*/
+/*}*/
+.header  img{
+	height: 3.64vw;
+	margin-left:5.2vw;
+    
+	position: relative;
+	margin-top:1.5vw;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+    
+}
+
+.navbar-fixed-top{
+    background:none;
+}
+
+nav{
+    background:none;
+}
+
+
+/*Slider 图片滚动切换*/
+
+/* Carousel base class */
+.carousel {
+  height: auto;
+  
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+    height:47.5vw;
+    padding-top: 20vw;
+    text-align: center;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  width:100%;
+  height:46.6vw;
+  
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  
+}
+
+.first-line{
+    font-weight: 100;
+    font-size:2.5vw;
+}
+
+.second-line{
+    font-weight: 200;
+    font-size:3.5vw;
+}
+
+.third-line{
+    font-weight:100;
+    font-size:2.2vw;
+}
+
+.topVideo{
+    width:100%;
+    height:46.6vw;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  
+}
+
+
+/*大图展示产品特点*/
+.intro{
+    text-align: center;
+    color:white;
+}
+
+.firstPoint, .secondPoint {
+    height:100vh;
+}
+
+.pointContainer{
+    width:100%;
+}
+
+
+.cover {
+    height: 100%;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.textImg{
+    
+}
+
+/*---------------产品特点结束-----------------*/
+
+/*解释算法*/
+.algorithm{
+    height:auto;
+}
+
+.techIntro{
+    padding:0;
+    text-align:center;
+    height:auto;
+    -webkit-box-shadow: 0px 10px 20px -12px rgba(83,166,248,0.56);
+    -moz-box-shadow: 0px 10px 20px -12px rgba(83,166,248,0.56);
+    box-shadow: 0px 10px 20px -12px rgba(83,166,248,0.56);
+}
+
+.explanation{
+    margin-top:3vh;
+    margin-bottom:3vh;
+    width:70%;
+    height:5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .explanation{
+        margin-top:3vw;
+        margin-bottom:3vw;
+        width:70%;
+        height:3vw;
+    }
+
+}
+
+
+
+
+/*技术参数*/
+
+.techContainer{
+    margin-top: 5vh;
+}
+
+.techTitle{
+    margin-top:5vh;
+    text-align: center;
+}
+.techSpec{
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    
+}
+
+.unit{
+  height:5vw;   
+}
+
+.white li.active a,
+.white li.active a:hover,
+.white li.active a:focus{
+    background-color: white;
+    color:#337ab7;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background-color: transparent;
+    border-bottom: 2px solid;
+}
+
+
+
+.white li a{
+    color:grey;
+}
+
+.techTab{
+    width:70px;
+}
+
+.hardwareImgSelected {
+    content:url("/img/blue.jpg");
+}
+.hardwareImgNormal{
+    content:url("/img/c-finger-pointing.png");
+}
+
+.circle{
+    height:120px;
+    line-height: 120px;
+    width:120px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color:darkgrey;   
+    margin-top: 30vh;
+}
+
+.circleS{
+    margin-right: 0;
+    height:120px;
+    line-height: 120px;
+    border-radius: 50%;
+    width:120px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:darkgrey;   
+}
+
+.circleText{
+    line-height: 83px;
+}
+
+.otherHardware{
+    height:150px;
+}
+
+.outBox{
+    display:flex;
+    align-items:center;
+    margin: 2vh;
+}
+
+.companyNameS{
+    height:50px;
+    line-height: 50px;
+}
+
+.companyNameSTwo{
+    height:75px;
+    line-height: 75px;
+}
+
+.hardwareTitle {
+    margin:10px auto;
+    
+}
+
+.progress{
+    margin-right: 10px;
+    height:28px;
+}
+
+.bars{
+    height: 28px;
+    line-height: 28px;
+}
+
+.progress-bar{
+    font-size: 0.6em;
+    vertical-align: middle;
+    line-height: 28px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red , yellow); /* Standard syntax */
+} 
+
+.right{
+    margin-right: 0;
+}
+
+
+.tab-content{
+    margin: 5vh auto;
+    width:80%;
+    max-width:1000px;
+}
+
+.btnContainer{
+    margin-top:5vh;
+}
+#detailBtn{
+    width:200px;
+    height:50px;
+    text-align: center;
+    background-color:white;
+    border-style:solid;
+    border-color:darkgrey;
+}
+
+.detailContainer{
+    margin-top:2vw;
+}
+
+
+
+
+/* 手势介绍 */
+.gestureIntro{
+	height:auto;
+	font-size:1.248vw;
+    margin-top:10vh;
+}
+
+.gestureIntroText{
+	font-size: 2.496vw;
+	text-align: center;
+	height:5vw;
+	line-height:5vw;
+	/*margin-top: 1vw;*/
+	/*margin-bottom: 1vw;*/
+}
+.gestureIntroText1{
+	font-size: 1.5vw;
+	line-height: 2.5vw;
+}
+.gestureIntroContent{
+	width: 52vw;
+	margin: 0 auto;
+	margin-top: 6vw;
+
+}
+
+.gestureIntro_1 {
+    text-align: center;
+	height:14.04vw;
+}
+
+.gestureIntro_2, .gestureIntro_3{
+	text-align: center;
+	height:14.04vw;
+    min-height: 150px;
+}
+
+.gestureIntroContent img{
+	width:7.8vw;
+	height:auto;
+    min-width: 70px;
+}
+
+.gestureIntroContentT{
+	margin-top: 0.7vw;;
+	margin-bottom: 0.5vw;
+	color: #999999;
+}
+.gestureIntroContentP{
+	margin-bottom: 1vw;
+}
+
+
+
+
+
+
+
+/*使用场景  http://www.alessioatzeni.com/blog/css3-hover-effects/ No.4 */
+
+.senario{
+    width:100;
+    max-width: 1300px;
+    margin:auto;
+    
+}
+.outerBox{
+    display:block;
+    position:relative;
+    width:100%;
+    height:auto;
+    -webkit-transition-timing-function: cubic-bezier(0.42,0,1,1);
+    transition-timing-function: cubic-bezier(0.42,0,1,1);
+    margin:0;
+    
+}
+
+.imgContainer{
+    padding:10px;
+}
+
+.clearPadding{
+    padding:0;
+}
+
+
+.mask {
+    background: #53a6f8;
+    height: 100%;
+    width: 100%;
+    opacity: 0.81;
+    left:0;
+    top: 0;
+    position: absolute;
+    color:white;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:all 0.15s ease-in-out;
+    
+}
+
+.outerBox:hover .mask {
+    top:80%;
+    height:20%;
+    -webkit-transition-timing-function: cubic-bezier(0.42,0,1,1);
+    transition-timing-function: cubic-bezier(0.42,0,1,1);
+}
+
+
+
+
+
+
+
+/* 视频 */
+.videoContent{
+	width:100%;
+    text-align: center
+}
+.videoContent video{
+	width:100%;
+}
+
+/*手势SDK*/
+.sdkSection{
+    width:80%;
+    max-width: 1300px;
+    margin:5vw auto;
+}
+
+.sdkIconContainer{
+    margin:7vw auto;
+}
+
+
+.sdkIcon{
+    max-width:140px;
+}
+
+/*向所有开发商开放SDK*/
+.sdkOpen{
+    width:80%;
+    max-width: 1300px;
+    margin:5vw auto;
+}
+
+.sdkOpenIconContainer{
+    margin:7vw auto;
+}
+
+.sdkOpenIcon{
+    max-width: 110px;
+}
+
+/*关于我们*/
+.aboutUs{
+    color:white;
+    margin-bottom: 0;
+}
+
+.aboutUsOuterBox{
+    display:block;
+    position:relative;
+    width:100%;
+    height:auto;
+    -webkit-transition-timing-function: cubic-bezier(0.42,0,1,1);
+    transition-timing-function: cubic-bezier(0.42,0,1,1);
+    margin:0;
+    
+}
+.aboutUsCover{
+    height: 100%;
+    width: 42%;
+    top: 0;
+    left: 8vw;
+    position: absolute;
+    text-align: center;
+}
+
+.aboutUsTitle{
+    width:100%;
+    text-align: left;
+    margin: 15vw 0 5vw 0vw;
+    
+}
+.aboutUsText{
+    margin-left:0;
+    text-align:justify;
+    width:100%;
+    line-height: 36px;
+}
+
+.aboutYingmeiji{
+    background:white;
+    color:black;
+    width:180px;
+    height:50px;
+    border-radius: 5px;
+    margin:8vw auto;
+}
+
+
+
+
+/*联系我们*/
+.contactUs{
+    margin:0;
+    padding:0;
+    background-color: rgb(9,115,195);
+    width:100%;
+}
+
+.contactUsHeading{
+    margin:5vh auto 2.5vh;
+    color:white;
+}
+
+label {
+    color: #333;
+}
+.btn-send {
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    width:180px;
+    height:50px;
+    color:rgb(9,115,195);
+    border-radius: 5px;
+    border-style: none;
+    background-color: white;
+}
+
+.form-control{
+    background-color: rgb(65,143,205);
+    color:white;
+    border:none;
+}
+input::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: white !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: white !important;  
+}
+
+textarea::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: white !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: white !important;  
+}
+
+.text-muted{
+    color:white;
+}
+
+.ditu{
+    width:20vw;
+    margin:5vw auto 10vw auto;
+}
+.locationIcon{
+    margin-top:4vw;
+    max-width: 38px;
+}
+.address{
+    height:15vw;
+}
+.addressCover {
+    height: auto;
+    width: 100%;
+    color:white;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    text-align: center;
+}
+
+.addressText1{
+    margin-top: 20px;
+}
+.email{
+    margin-top:4vw;
+}
+
+.emailIcon{
+    margin-top:0;
+    max-width: 38px;
+}
+.emailAddress{
+    color:white;
+    text-align: center;
+}
+
+.phoneIcon{
+    margin-top:4vw;
+    max-width: 38px;
+}
+.phoneNumber{
+    color:white;
+    text-align: center;
+}
+
+/* 底 */
+.footer{
+	width:100vw;
+}
+.footer img{
+	width:100vw;
+}
