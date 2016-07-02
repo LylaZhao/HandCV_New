@@ -7,8 +7,8 @@ $from = 'handcv@imgnb.com';
 $sendTo = 'handcv@imgnb.com';
 $subject = 'HandCV 网站留言';
 $fields = array('name' => 'Name', 'org'=> 'Org', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
-$okMessage = '恭喜！您的留言已收到，Hand CV 会尽快与您取得联系。Contact form successfully submitted. Thank you, I will get back to you soon!';
-$errorMessage = '呀！出错了。别慌张，稍后再试试。There was an error while submitting the form. Please try again later';
+$okMessage = '恭喜！您的留言已收到，Hand CV 会尽快与您取得联系。Contact form successfully submitted. Thank you! We will get back to you soon!';
+$errorMessage = '呀！出错了。别慌张，稍后再试试。Sorry! There was an error while submitting the form. Please try again later';
 
 // let's do the sending
 
