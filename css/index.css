@@ -669,47 +669,59 @@ label {
     color:white;
     border:none;
 }
+
+input{
+    font-size:1.25vw;
+}
+textarea{
+    font-size:1.25vw;
+}
+
 input::-webkit-input-placeholder {
     color: white !important;
     font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
-    font-size:1.3vw;
+    font-size:1.25vw;
     
 }
  
 input:-moz-placeholder { /* Firefox 18- */
     color: white !important;
     font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
-    font-size:1.3vw;
+    font-size:1.25vw;
 }
  
 input:-ms-input-placeholder {  
     color: white !important;
     font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
-    font-size:1.3vw;
+    font-size:1.25vw;
 }
 
 textarea::-webkit-input-placeholder {
     color: white !important;
     font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
-    font-size:1.3vw;
+    font-size:1.25vw;
 }
  
 textarea:-moz-placeholder { /* Firefox 18- */
     color: white !important;
     font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
-    font-size:1.3vw;
+    font-size:1.25vw;
 }
  
 textarea:-ms-input-placeholder {  
     color: white !important;
     font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
-    font-size:1.3vw;  
+    font-size:1.25vw;  
 }
 
 .text-muted{
     color: white !important;
     font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
     font-size:1.1vw;
+}
+
+.form-control{
+    font-size:1.25vw;
 }
 
 .ditu{
