@@ -50,6 +50,18 @@ section{
 }
 
 
+.sectionHeading1{
+    font-size: 2.496vw;
+	text-align: center;
+	height:5vw;
+	line-height:5vw;
+}
+
+.sectionHeading2{
+	font-size: 1.5vw;
+	line-height: 2.5vw;
+}
+
 
 
 /* 头 */
@@ -310,14 +322,12 @@ nav{
     border-bottom: 2px solid;
 }
 
-
-
 .white li a{
     color:grey;
 }
 
 .techTab{
-    width:70px;
+    width:30%;
 }
 
 .hardwareImgSelected {
@@ -422,6 +432,7 @@ nav{
     border-color:darkgrey;
 }
 
+
 .detailContainer{
     margin-top:2vw;
 }
@@ -436,18 +447,7 @@ nav{
     margin-top:10vh;
 }
 
-.gestureIntroText{
-	font-size: 2.496vw;
-	text-align: center;
-	height:5vw;
-	line-height:5vw;
-	/*margin-top: 1vw;*/
-	/*margin-bottom: 1vw;*/
-}
-.gestureIntroText1{
-	font-size: 1.5vw;
-	line-height: 2.5vw;
-}
+
 .gestureIntroContent{
 	width: 52vw;
 	margin: 0 auto;
@@ -490,7 +490,7 @@ nav{
 /*使用场景  http://www.alessioatzeni.com/blog/css3-hover-effects/ No.4 */
 
 .senario{
-    width:100;
+    width:80%;
     max-width: 1300px;
     margin:auto;
     
@@ -507,7 +507,7 @@ nav{
 }
 
 .imgContainer{
-    padding:10px;
+    padding:5px;
 }
 
 .clearPadding{
@@ -578,7 +578,7 @@ nav{
 }
 
 .sdkOpenIconContainer{
-    margin:7vw auto;
+    margin:5vw auto;
 }
 
 .sdkOpenIcon{
@@ -638,7 +638,7 @@ nav{
 /*联系我们*/
 .contactUs{
     margin:0;
-    padding:0;
+    padding-bottom:2vw;
     background-color: rgb(9,115,195);
     width:100%;
 }
@@ -670,31 +670,46 @@ label {
     border:none;
 }
 input::-webkit-input-placeholder {
-color: white !important;
+    color: white !important;
+    font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
+    font-size:1.3vw;
+    
 }
  
 input:-moz-placeholder { /* Firefox 18- */
-color: white !important;  
+    color: white !important;
+    font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
+    font-size:1.3vw;
 }
  
 input:-ms-input-placeholder {  
-color: white !important;  
+    color: white !important;
+    font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
+    font-size:1.3vw;
 }
 
 textarea::-webkit-input-placeholder {
-color: white !important;
+    color: white !important;
+    font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
+    font-size:1.3vw;
 }
  
 textarea:-moz-placeholder { /* Firefox 18- */
-color: white !important;  
+    color: white !important;
+    font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
+    font-size:1.3vw;
 }
  
 textarea:-ms-input-placeholder {  
-color: white !important;  
+    color: white !important;
+    font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
+    font-size:1.3vw;  
 }
 
 .text-muted{
-    color:white;
+    color: white !important;
+    font-family:  '微软雅黑', 'Pingfang SC', BlinkMacSystemFont, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif, -apple-system;
+    font-size:1.1vw;
 }
 
 .ditu{
