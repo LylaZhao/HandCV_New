@@ -83,19 +83,8 @@ section{
 	opacity: 0;
 	z-index: -1;
 }
-.header .headerbtns{
-	min-width: 220px;
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	text-align: center;
-    font-size:16px;
-	right:5.2vw;
-}
+
+
 
 @media only screen and (max-width: 736px) {
     
@@ -110,8 +99,33 @@ section{
 	text-align: center;
     font-size:16px;
     margin:auto;
+    }    
+}
+
+@media (min-width: 736px) {
+    .header .headerbtn{
+        font-size: 1.248vw;
+        color: white;
+        margin-left: 2vw;
+    }
+    .header .headerbtn:hover{
+        border-bottom: 2px solid;
+    }
+    .header .headerbtns{
+        min-width: 220px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+        font-size:16px;
+        right:5.2vw;
     }
 }
+
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a {
     color: white;
@@ -124,14 +138,7 @@ section{
 a:link {
 	text-decoration: none;
 }
-.header .headerbtn{
-	font-size: 1.248vw;
-	color: white;
-	margin-left: 2vw;
-}
-.header .headerbtn:hover{
-	border-bottom: 2px solid;
-}
+
 /*.header .headerbtn:last-child{*/
 	/*float: right;*/
 /*}*/
@@ -321,26 +328,26 @@ nav{
 /*stop the nav-pills from stacking on small screen*/
 @media only screen and (max-width: 768px){
     .nav-justified > li {
-    display: table-cell;
-    width: 1%;
+        display: table-cell;
+        width: 1%;
     }
     .nav-justified > li > a  {
-    border-bottom: 1px solid #ddd !important;
-    border-radius: 4px 4px 0 0 !important;
-    margin-bottom: 0 !important;
+        border-bottom: 1px solid #ddd !important;
+        border-radius: 4px 4px 0 0 !important;
+        margin-bottom: 0 !important;
     }
     .techTab{
-    width:60%;
+        width:60%;
     }
     .iconText{
-    font-size: 2.5vw;
+        font-size: 2.5vw;
     }
     .tab-content{
-        width:100vw;
+        width:92vw;
         margin-top:1.5vw;
     }
     .tab-pane{
-        width:100vw;
+        width:100%;
     }
     #detailBtn{
         width:200px;
@@ -382,6 +389,9 @@ nav{
 
 .techContainer{
     margin-top: 5vh;
+    margin-left:0;
+    margin-right:0;
+    width:100vw;
 }
 
 .techTitle{
