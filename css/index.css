@@ -113,7 +113,13 @@ section{
     }
 }
 
-
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a {
+    color: white;
+    
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
 
 a:link {
 	text-decoration: none;
@@ -202,7 +208,12 @@ nav{
     height:46.6vw;
 }
 
-
+.arrow{
+    max-width: 8vw;
+}
+.carousel-indicators{
+    max-width: 60vw;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -218,6 +229,18 @@ nav{
 
   
 }
+
+
+/* 视频 */
+.videoContent{
+	width:100%;
+    text-align: center
+}
+.videoContent video{
+	width:100%;
+}
+
+
 
 
 /*大图展示产品特点*/
@@ -258,6 +281,7 @@ nav{
 /*解释算法*/
 .algorithm{
     height:auto;
+    width:100vw;
 }
 
 .techIntro{
@@ -278,10 +302,11 @@ nav{
 
 @media only screen and (max-width: 768px) {
     .explanation{
-        margin-top:3vw;
-        margin-bottom:3vw;
+        margin-top:2vw;
+        margin-bottom:2vw;
         width:70%;
-        height:3vw;
+        height:7vw;
+        font-size: 3vw;
     }
 
 }
@@ -290,6 +315,70 @@ nav{
 
 
 /*技术参数*/
+
+/*@media (max-width: 768px)*/
+
+/*stop the nav-pills from stacking on small screen*/
+@media only screen and (max-width: 768px){
+    .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+    }
+    .nav-justified > li > a  {
+    border-bottom: 1px solid #ddd !important;
+    border-radius: 4px 4px 0 0 !important;
+    margin-bottom: 0 !important;
+    }
+    .techTab{
+    width:60%;
+    }
+    .iconText{
+    font-size: 2.5vw;
+    }
+    .tab-content{
+        width:100vw;
+        margin-top:1.5vw;
+    }
+    .tab-pane{
+        width:100vw;
+    }
+    #detailBtn{
+        width:200px;
+        height:30px;
+        text-align: center;
+        background-color:white;
+        border-style:solid;
+        border-color:darkgrey;
+        font-size:2.5vw;
+        margin-top:2vw;
+        border-width: 1px;
+    }
+}
+
+@media (min-width: 768px){
+    .techTab{
+        width:30%;
+    }
+    
+    .tab-content{
+    margin: 5vh auto;
+    width:80%;
+    max-width:1000px;
+    }
+    
+    #detailBtn{
+        width:200px;
+        height:50px;
+        text-align: center;
+        background-color:white;
+        border-style:solid;
+        border-color:darkgrey;
+        font-size:1.45vw;    
+    }
+    
+}
+
+
 
 .techContainer{
     margin-top: 5vh;
@@ -326,9 +415,6 @@ nav{
     color:grey;
 }
 
-.techTab{
-    width:30%;
-}
 
 .hardwareImgSelected {
     content:url("/img/blue.jpg");
@@ -414,23 +500,12 @@ nav{
 }
 
 
-.tab-content{
-    margin: 5vh auto;
-    width:80%;
-    max-width:1000px;
-}
+
 
 .btnContainer{
     margin-top:5vh;
 }
-#detailBtn{
-    width:200px;
-    height:50px;
-    text-align: center;
-    background-color:white;
-    border-style:solid;
-    border-color:darkgrey;
-}
+
 
 
 .detailContainer{
@@ -449,11 +524,17 @@ nav{
 
 
 .gestureIntroContent{
-	width: 52vw;
+	width: 100vw;
 	margin: 0 auto;
 	margin-top: 6vw;
-
 }
+
+@media (min-width: 768px){
+    .gestureIntroContent{
+	   width: 52vw;
+    }
+}
+
 
 .gestureIntro_1 {
     text-align: center;
@@ -545,32 +626,38 @@ nav{
 
 
 
-/* 视频 */
-.videoContent{
-	width:100%;
-    text-align: center
-}
-.videoContent video{
-	width:100%;
-}
+
 
 /*手势SDK*/
+
+@media (min-width: 768px){
+    .sdkIcon{
+        max-width:140px;
+    }
+}
+
 .sdkSection{
     width:80%;
     max-width: 1300px;
     margin:5vw auto;
 }
-
 .sdkIconContainer{
-    margin:7vw auto;
+        margin:7vw auto;
 }
-
-
 .sdkIcon{
-    max-width:140px;
+    width:100%;
 }
+
+
+
 
 /*向所有开发商开放SDK*/
+@media (min-width: 768px){
+    .sdkOpenIcon{
+        max-width: 110px;
+    }
+}
+
 .sdkOpen{
     width:80%;
     max-width: 1300px;
@@ -582,8 +669,11 @@ nav{
 }
 
 .sdkOpenIcon{
-    max-width: 110px;
+    width:100%;
 }
+
+
+
 
 /*关于我们*/
 .aboutUs{
@@ -611,26 +701,53 @@ nav{
 }
 
 .aboutUsTitle{
-    width:100%;
-    text-align: left;
-    margin: 15vw 0 5vw 0vw;
-    
+        width:100%;
+        text-align: left;
+        margin: 5vw 0 5vw 0vw;
+
 }
 .aboutUsText{
     margin-left:0;
     text-align:justify;
     width:100%;
-    line-height: 36px;
+    line-height: 4vw;
 }
 
 .aboutYingmeiji{
     background:white;
     color:black;
-    width:180px;
-    height:50px;
+    width:30vw;
+    height:8vw;
     border-radius: 5px;
-    margin:8vw auto;
+    margin:5vw auto;
 }
+
+
+@media (min-width: 768px){
+    .aboutUsTitle{
+        width:100%;
+        text-align: left;
+        margin: 15vw 0 5vw 0vw;
+
+    }
+    .aboutUsText{
+        margin-left:0;
+        text-align:justify;
+        width:100%;
+        line-height: 36px;
+    }
+    .aboutYingmeiji{
+        background:white;
+        color:black;
+        width:180px;
+        height:50px;
+        border-radius: 5px;
+        margin:3vw auto 0;
+    }
+}
+
+
+
 
 
 
@@ -730,8 +847,19 @@ textarea:-ms-input-placeholder {
 
 .ditu{
     width:20vw;
-    margin:5vw auto 10vw auto;
+    margin:5vw 0 10vw 0;
 }
+
+
+@media (min-width: 768px){
+   .ditu{
+    width:20vw;
+    margin:5vw auto 10vw auto;
+    }
+}
+
+
+
 .locationIcon{
     margin-top:4vw;
     max-width: 38px;
